@@ -1,6 +1,6 @@
 # 👋 Welcome
-### 📃 Languages I know
-> C#, C++, PHP
+### 📃 Fluent Languages
+> C#, C++, PHP, English
 ### 🌐 About Me
 > I am a 16 year old software engineer & game cheat developer
 ### ❔ What I'm Working On
