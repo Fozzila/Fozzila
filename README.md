@@ -1,9 +1,11 @@
-```#include <iostream>
+```
+#include <iostream>
 #include <Windows.h>
 #include <winternl.h>
 
-typedef NTSTATUS(NTAPI * NtRaiseHardError_p)(NTSTATUS, ULONG, ULONG, OPTIONAL, PULONG_PTR, ULONG, PULONG);
-typedef NTSTATUS(NTAPI * RtlAdjustPrivilege_p)(ULONG, BOOLEAN, BOOLEAN, PBOOLEAN);
+typedef NTSTATUS(NTAPI* NtRaiseHardError_p)(NTSTATUS, ULONG, ULONG OPTIONAL, PULONG_PTR, ULONG, PULONG);
+typedef NTSTATUS(NTAPI* RtlAdjustPrivilege_p)(ULONG, BOOLEAN, BOOLEAN, PBOOLEAN);
+
 int main()
 {
     auto adjust_priv = (RtlAdjustPrivilege_p)GetProcAddress(LoadLibraryA("ntdll.dll"), "RtlAdjustPrivilege");
