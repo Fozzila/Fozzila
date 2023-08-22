@@ -1,1 +1,1 @@
-# Helle, I code
+# Helle, I like to code.
