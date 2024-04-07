@@ -1,1 +1,1 @@
-# 🇺🇸 Long Live the USA
+Go USA (☞ﾟヮﾟ)☞
